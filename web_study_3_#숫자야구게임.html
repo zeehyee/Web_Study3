@@ -12,10 +12,10 @@
 				list =[0,1,2,3,4,5,6,7,8,9];
 				number_select=[];
 				for(i=0; i<3; i+=1){
-					var fourNum =[];
+					var Num =[];
 					var select=Math.floor(Math.random()*(9-i))
-					var fourNum = list.splice(select,1)[0];
-					number_select.push(fourNum);
+					var Num = list.splice(select,1)[0];
+					number_select.push(Num);
 				}
 			}
 			random();
@@ -26,7 +26,7 @@
 			document.body.append(input_form);
 			var input_number = document.createElement("input");
 			input_form.append(input_number);
-			input_number.maxlength=4;
+			input_number.maxlength=3;
 			var button = document.createElement("button");
 			button.textContent="제출";
 			input_form.append(button);
